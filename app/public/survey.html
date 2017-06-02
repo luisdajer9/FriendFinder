@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Friend Finder Survey</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chosen/1.7.0/chosen.css">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	<script
+  src="https://code.jquery.com/jquery-3.2.1.min.js"
+  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+  crossorigin="anonymous"></script>
+</head>
+<body>
+
+<style type="text/css">
+	.modal {
+		position: fixed;
+		z-index: 1050;
+		display: none;
+		overflow: hidden;
+	}
+
+	.modal-content {
+		position: relative;
+		background-color: #fff;
+		background-clip: padding-box;
+		border: 1px solid;
+
+	}
+
+	.modal-header {
+		padding: 15px;
+		border-bottom: 1px solid;
+	}
+
+	.modal-body {
+		position: relative;
+		padding: 15px;
+	}
+
+	.modal-footer {
+		padding: 15px;
+		border-top: 1px solid;
+	}
+</style>
+
+<div class="container">
+	<div class="page-header">
+		<h1>Survey Questions</h1>
+	</div>
+</div>
+
+
+<div class="container">
+	<h1>About You</h1>
+	<div class="page-header">
+		<form>
+		  <div class="form-group">
+		    <label for="name">Name (Required)</label>
+		    <input type="name" class="form-control" id="name" placeholder="Name">
+		  </div>
+		  <div class="form-group">
+		    <label for="photo">Link to photo (Required)</label>
+		    <input type="link" class="form-control" id="photo" placeholder="Link to photo">
+		  </div>
+	  </form>
+	  </div>
+</div>
+
+<div class="container">
+	<div class="container">
+		<h2>Question 1</h2>
+		<h3>Your mind is always buzzing with unexplored ideas and plans.</h3>
+		  <select class="my_select_box" id="question1" data-placeholder="How much do you agree">
+			    <option value="1">1 (Strongly Disagree)</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="3">4</option>
+			    <option value="3">5 (Strongly Agree)</option>
+  		</select>
+	</div>
+</div>
+
+<div class="container">
+	<div class="container">
+		<h2>Question 2</h2>
+		<h3>Generally speaking, you rely more on your experience than your imagination.</h3>
+		  <select class="my_select_box" id="question2" data-placeholder="How much do you agree">
+			    <option value="1">1 (Strongly Disagree)</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="3">4</option>
+			    <option value="3">5 (Strongly Agree)</option>
+  		</select>
+	</div>
+</div>
+
+<div class="container">
+	<div class="container">
+		<h2>Question 3</h2>
+		<h3>You find it easy to stay relaxed and focused even when there is some pressure.</h3>
+		  <select class="my_select_box" id="question3" data-placeholder="How much do you agree">
+			    <option value="1">1 (Strongly Disagree)</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="3">4</option>
+			    <option value="3">5 (Strongly Agree)</option>
+  		</select>
+	</div>
+</div>
+
+<div class="container">
+	<div class="container">
+		<h2>Question 4</h2>
+		<h3>You rarely do something just out of sheer curiosity.</h3>
+		  <select class="my_select_box" id="question4" data-placeholder="How much do you agree">
+			    <option value="1">1 (Strongly Disagree)</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="3">4</option>
+			    <option value="3">5 (Strongly Agree)</option>
+  		</select>
+	</div>
+</div>
+
+<div class="container">
+	<div class="container">
+		<h2>Question 5</h2>
+		<h3>People can rarely upset you.</h3>
+		  <select class="my_select_box" id="question5" data-placeholder="How much do you agree">
+			    <option value="1">1 (Strongly Disagree)</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="3">4</option>
+			    <option value="3">5 (Strongly Agree)</option>
+  		</select>
+	</div>
+</div>
+
+<div class="container">
+	<div class="container">
+		<h2>Question 6</h2>
+		<h3>People can rarely upset you.</h3>
+		  <select class="my_select_box" id="question6" data-placeholder="How much do you agree">
+			    <option value="1">1 (Strongly Disagree)</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="3">4</option>
+			    <option value="3">5 (Strongly Agree)</option>
+  		</select>
+	</div>
+</div>
+
+<div class="container">
+	<div class="container">
+		<h2>Question 7</h2>
+		<h3>In a discussion, truth should be more important than people’s sensitivities.</h3>
+		  <select class="my_select_box" id="question7" data-placeholder="How much do you agree">
+			    <option value="1">1 (Strongly Disagree)</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="3">4</option>
+			    <option value="3">5 (Strongly Agree)</option>
+  		</select>
+	</div>
+</div>
+
+<div class="container">
+	<div class="container">
+		<h2>Question 8</h2>
+		<h3>You rarely get carried away by fantasies and ideas.</h3>
+		  <select class="my_select_box" id="question8" data-placeholder="How much do you agree">
+			    <option value="1">1 (Strongly Disagree)</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="3">4</option>
+			    <option value="3">5 (Strongly Agree)</option>
+  		</select>
+	</div>
+</div>
+
+<div class="container">
+	<div class="container">
+		<h2>Question 9</h2>
+		<h3>You think that everyone’s views should be respected regardless of whether they are supported by facts or not.</h3>
+		  <select class="my_select_box" id="question9" data-placeholder="How much do you agree">
+			    <option value="1">1 (Strongly Disagree)</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="3">4</option>
+			    <option value="3">5 (Strongly Agree)</option>
+  		</select>
+	</div>
+</div>
+
+<div class="container">
+	<div class="container">
+		<h2>Question 10</h2>
+		<h3>You feel more energetic after spending time with a group of people.</h3>
+		  <select class="my_select_box" id="question10" data-placeholder="How much do you agree">
+			    <option value="1">1 (Strongly Disagree)</option>
+			    <option value="2">2</option>
+			    <option value="3">3</option>
+			    <option value="3">4</option>
+			    <option value="3">5 (Strongly Agree)</option>
+  		</select>
+	</div>
+</div>
+
+
+<div class="container">
+	<div class="container">
+		<button class="btn btn-primary btn-lg btn-block" id="submitButton" type="submit">Submit</button>
+	</div>
+</div>
+</div>
+
+<div id="resultModal" class="modal fade" role="dialog">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal">X</button>
+				<h2 class="modal-title"><strong>Best Match</strong></h2>
+			</div>
+			<div class="modal-body">
+				<h2 id="matchName"></h2>
+				<img id="matchImage" src="">
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$("#submitButton").on("click", function() {
+			function validateForm () {
+				var isValid = true;
+				$(".my_select_box").each(function() {
+					if ($(this).val() === "") {
+						isValid = false;
+					}
+
+				});
+
+				$(".form-group").each(function(){
+					if ($(this).val() === "") {
+						isValid = false;
+					}
+				})
+				return isValid;
+			}
+
+			if (validateForm() == true) {
+
+				var userData = {
+					name: $("#name").val().trim(),
+					photo: $("#photo").val().trim(),
+					scores: [$("#question1").val(), $("#question2").val(), $("#question3").val(), $("#question4").val(), $("#question5").val(), $("#question6").val(), $("#question7").val(), $("#question8").val(), $("#question9").val(), $("#question10").val() ]
+				}
+
+				var currentURL = window.location.origin;
+
+				$.post(currentURL + "/api/friends", userData, function(data) {
+					$("#matchName").text(data.name);
+					$("#matchImage").attr("src", data.photo);
+
+					$("#resultModal").modal("toggle");
+
+				})
+			}
+			else {
+				alert("Please fill out form before submitting");
+			}
+
+			return false;
+
+
+	});
+
+
+</script>
+
+</body>
+</html>
